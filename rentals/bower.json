@@ -1,0 +1,7 @@
+{
+  "name": "rentals",
+  "dependencies": {
+    "pretender": "~0.10.1",
+    "Faker": "~3.0.0"
+  }
+}

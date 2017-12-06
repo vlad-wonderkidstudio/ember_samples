@@ -1,0 +1,16 @@
+{{outlet}}
+
+<h1>RENTALS</h1>
+
+{{#each model as |rentalUnit|}}
+  {{rental-listing rental=rentalUnit}}
+{{/each}}
+
+<div>
+  {{#link-to 'about' class="button"}}
+    About Us
+  {{/link-to}}
+  {{#link-to 'contact' class="button"}}
+    Contact us
+  {{/link-to}}
+</div>
