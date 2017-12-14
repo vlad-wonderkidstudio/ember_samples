@@ -208,7 +208,7 @@ class Serializer extends Component
     }
     
     /**
-     * @patch by Vlad for array resources
+     * @patch by Vlad for array resources 
      * @param ResourceInterface $resource
      * @return array
      */
