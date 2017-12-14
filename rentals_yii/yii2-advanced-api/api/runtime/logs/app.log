@@ -1,127 +1,23 @@
-2017-12-06 01:22:10 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
-Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#3 {main}
-2017-12-06 01:22:10 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
-    'HTTP_HOST' => 'ember.loc'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
-    'HTTP_REFERER' => 'http://ember.loc/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
-    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
-    'SERVER_NAME' => 'ember.loc'
-    'SERVER_ADDR' => '127.0.0.1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'DOCUMENT_ROOT' => '/var/www/ember/'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
-    'SERVER_ADMIN' => 'webmaster@localhost'
-    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41701'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/'
-    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512523330.046
-    'REQUEST_TIME' => 1512523330
-]
-2017-12-06 01:23:17 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class api\modules\rental\Module does not exist' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php:426
-Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(426): ReflectionClass->__construct('api\\modules\\ren...')
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('api\\modules\\ren...')
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\modules\\ren...', Array, Array)
-#3 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('api\\modules\\ren...', Array, Array)
-#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
-#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('rental')
-#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('rental/rental/i...')
-#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rental/i...', Array)
-#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#10 {main}
-2017-12-06 01:23:17 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'ember.loc'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
-    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
-    'SERVER_NAME' => 'ember.loc'
-    'SERVER_ADDR' => '127.0.0.1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'DOCUMENT_ROOT' => '/var/www/ember/'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
-    'SERVER_ADMIN' => 'webmaster@localhost'
-    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41710'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
-    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512523397.459
-    'REQUEST_TIME' => 1512523397
-]
-2017-12-06 01:26:11 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'api\modules\models\Rental' not found' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/rest/IndexAction.php:114
+2017-12-08 18:06:47 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'api\modules\module1\controllers\ActiveController' not found' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php:19
 Stack trace:
 #0 [internal function]: yii\base\ErrorHandler->handleFatalError()
 #1 {main}
-2017-12-06 01:26:11 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
+2017-12-08 18:06:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9h822bonth8jegmghn9nu96jt0'
+    '_csrf-backend' => 'c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83\";}'
 ]
 
 $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
+    'HTTP_COOKIE' => 'advanced-backend=9h822bonth8jegmghn9nu96jt0; _csrf-backend=c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83%22%3B%7D'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
 '
@@ -136,247 +32,50 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41711'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
+    'REMOTE_PORT' => '60195'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512523571.493
-    'REQUEST_TIME' => 1512523571
+    'REQUEST_TIME_FLOAT' => 1512756407.532
+    'REQUEST_TIME' => 1512756407
 ]
-2017-12-06 01:39:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
+2017-12-08 18:07:57 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "modelClass" property must be set.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/rest/ActiveController.php:65
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#3 {main}
-2017-12-06 01:39:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'ember.loc'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
-    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
-    'SERVER_NAME' => 'ember.loc'
-    'SERVER_ADDR' => '127.0.0.1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'DOCUMENT_ROOT' => '/var/www/ember/'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
-    'SERVER_ADMIN' => 'webmaster@localhost'
-    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41741'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/users'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/users'
-    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512524396.923
-    'REQUEST_TIME' => 1512524396
-]
-2017-12-06 01:40:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
-Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#3 {main}
-2017-12-06 01:40:03 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'ember.loc'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
-    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
-    'SERVER_NAME' => 'ember.loc'
-    'SERVER_ADDR' => '127.0.0.1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'DOCUMENT_ROOT' => '/var/www/ember/'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
-    'SERVER_ADMIN' => 'webmaster@localhost'
-    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41742'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/users'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/users'
-    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512524403.129
-    'REQUEST_TIME' => 1512524403
-]
-2017-12-06 01:40:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
-Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#3 {main}
-2017-12-06 01:40:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'ember.loc'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
-    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
-    'SERVER_NAME' => 'ember.loc'
-    'SERVER_ADDR' => '127.0.0.1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'DOCUMENT_ROOT' => '/var/www/ember/'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
-    'SERVER_ADMIN' => 'webmaster@localhost'
-    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41743'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rental'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rental'
-    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512524420.432
-    'REQUEST_TIME' => 1512524420
-]
-2017-12-06 01:42:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
-Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#3 {main}
-2017-12-06 01:42:07 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'ember.loc'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
-    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
-    'SERVER_NAME' => 'ember.loc'
-    'SERVER_ADDR' => '127.0.0.1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'DOCUMENT_ROOT' => '/var/www/ember/'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
-    'SERVER_ADMIN' => 'webmaster@localhost'
-    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41744'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rental/1'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rental/1'
-    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512524527.057
-    'REQUEST_TIME' => 1512524527
-]
-2017-12-06 01:45:20 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: api\modules\rental\Module::formats' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Component.php:203
-Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/BaseYii.php(532): yii\base\Component->__set('formats', Array)
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/BaseObject.php(106): yii\BaseYii::configure(Object(api\modules\rental\Module), Array)
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
-#3 [internal function]: yii\base\Module->__construct('rental', Object(yii\web\Application), Array)
-#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
-#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\modules\\ren...', Array, Array)
-#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('api\\modules\\ren...', Array, Array)
-#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
-#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('rental')
-#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('rental/rental/v...')
-#10 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rental/v...', Array)
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\rest\ActiveController->init()
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#2 [internal function]: yii\base\Controller->__construct('rental', Object(api\modules\module1\Module), Array)
+#3 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\modules\\mod...', Array, Array)
+#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('api\\modules\\mod...', Array)
+#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(643): yii\BaseYii::createObject('api\\modules\\mod...', Array)
+#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('rental')
+#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('rental/rentals')
+#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('module1/rental/...')
+#10 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('module1/rental/...', Array)
 #11 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#12 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
+#12 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
 #13 {main}
-2017-12-06 01:45:20 [127.0.0.1][-][-][info][application] $_GET = [
-    'id' => '2'
-]
-
-$_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
+2017-12-08 18:07:57 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9h822bonth8jegmghn9nu96jt0'
+    '_csrf-backend' => 'c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83\";}'
 ]
 
 $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
+    'HTTP_COOKIE' => 'advanced-backend=9h822bonth8jegmghn9nu96jt0; _csrf-backend=c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83%22%3B%7D'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
 '
@@ -391,55 +90,38 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41750'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/2'
+    'REMOTE_PORT' => '60197'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/2'
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512524720.802
-    'REQUEST_TIME' => 1512524720
+    'REQUEST_TIME_FLOAT' => 1512756477.836
+    'REQUEST_TIME' => 1512756477
 ]
-2017-12-06 02:12:39 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: api\modules\rental\Module::formats' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Component.php:203
+2017-12-08 18:12:37 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use yii\rest\Controller as Controller because the name is already in use' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php:7
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/BaseYii.php(532): yii\base\Component->__set('formats', Array)
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/BaseObject.php(106): yii\BaseYii::configure(Object(api\modules\rental\Module), Array)
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
-#3 [internal function]: yii\base\Module->__construct('rental', Object(yii\web\Application), Array)
-#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
-#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\modules\\ren...', Array, Array)
-#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('api\\modules\\ren...', Array, Array)
-#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
-#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('rental')
-#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('rental/rental/v...')
-#10 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rental/v...', Array)
-#11 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#12 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#13 {main}
-2017-12-06 02:12:39 [127.0.0.1][-][-][info][application] $_GET = [
-    'id' => '2'
-]
-
-$_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-08 18:12:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9h822bonth8jegmghn9nu96jt0'
+    '_csrf-backend' => 'c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83\";}'
 ]
 
 $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
+    'HTTP_COOKIE' => 'advanced-backend=9h822bonth8jegmghn9nu96jt0; _csrf-backend=c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83%22%3B%7D'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
 '
@@ -454,34 +136,31 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41775'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/2'
+    'REMOTE_PORT' => '60204'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/2'
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512526359.11
-    'REQUEST_TIME' => 1512526359
+    'REQUEST_TIME_FLOAT' => 1512756757.138
+    'REQUEST_TIME' => 1512756757
 ]
-2017-12-06 23:06:40 [127.0.0.1][-][-][error][yii\web\HttpException:415] exception 'yii\web\UnsupportedMediaTypeHttpException' with message 'None of your requested content types is supported.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php:209
+2017-12-08 20:00:24 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rental/rentals".' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php:537
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php(157): yii\filters\ContentNegotiator->negotiateContentType(Object(yii\web\Request), Object(yii\web\Response))
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php(145): yii\filters\ContentNegotiator->negotiate()
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\ContentNegotiator->beforeAction(Object(yii\rest\IndexAction))
-#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
-#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
-#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
-#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
-#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
-#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
-#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rental/i...', Array)
-#10 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#11 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#12 {main}
-2017-12-06 23:06:39 [127.0.0.1][-][-][info][application] $_SERVER = [
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rentals', Array)
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2017-12-08 20:00:24 [127.0.0.1][-][-][info][application] $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -507,7 +186,7 @@ Stack trace:
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41936'
+    'REMOTE_PORT' => '60316'
     'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -516,25 +195,22 @@ Stack trace:
     'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512601599.887
-    'REQUEST_TIME' => 1512601599
+    'REQUEST_TIME_FLOAT' => 1512763223.73
+    'REQUEST_TIME' => 1512763223
 ]
-2017-12-06 23:06:45 [127.0.0.1][-][-][error][yii\web\HttpException:415] exception 'yii\web\UnsupportedMediaTypeHttpException' with message 'None of your requested content types is supported.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php:209
+2017-12-08 20:00:52 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rental/rentals".' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php:537
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php(157): yii\filters\ContentNegotiator->negotiateContentType(Object(yii\web\Request), Object(yii\web\Response))
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php(145): yii\filters\ContentNegotiator->negotiate()
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\ContentNegotiator->beforeAction(Object(yii\rest\IndexAction))
-#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
-#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
-#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
-#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
-#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
-#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
-#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rental/i...', Array)
-#10 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#11 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#12 {main}
-2017-12-06 23:06:45 [127.0.0.1][-][-][info][application] $_SERVER = [
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rentals', Array)
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2017-12-08 20:00:52 [127.0.0.1][-][-][info][application] $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -560,7 +236,7 @@ Stack trace:
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41943'
+    'REMOTE_PORT' => '60325'
     'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -569,25 +245,22 @@ Stack trace:
     'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512601605.762
-    'REQUEST_TIME' => 1512601605
+    'REQUEST_TIME_FLOAT' => 1512763252.423
+    'REQUEST_TIME' => 1512763252
 ]
-2017-12-06 23:09:07 [127.0.0.1][-][-][error][yii\web\HttpException:415] exception 'yii\web\UnsupportedMediaTypeHttpException' with message 'None of your requested content types is supported.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php:209
+2017-12-08 20:04:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php:537
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php(157): yii\filters\ContentNegotiator->negotiateContentType(Object(yii\web\Request), Object(yii\web\Response))
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/filters/ContentNegotiator.php(145): yii\filters\ContentNegotiator->negotiate()
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\ContentNegotiator->beforeAction(Object(yii\rest\IndexAction))
-#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
-#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
-#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
-#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
-#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
-#8 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
-#9 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rental/rental/i...', Array)
-#10 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#11 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#12 {main}
-2017-12-06 23:09:07 [127.0.0.1][-][-][info][application] $_SERVER = [
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2017-12-08 20:04:02 [127.0.0.1][-][-][info][application] $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -613,42 +286,42 @@ Stack trace:
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41952'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
+    'REMOTE_PORT' => '60339'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals'
+    'REQUEST_URI' => '//admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512601747.862
-    'REQUEST_TIME' => 1512601747
+    'REQUEST_TIME_FLOAT' => 1512763442.979
+    'REQUEST_TIME' => 1512763442
 ]
-2017-12-06 23:22:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
+2017-12-08 20:04:16 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php:537
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
 #1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
 #3 {main}
-2017-12-06 23:22:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
 
-$_SERVER = [
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2017-12-08 20:04:16 [127.0.0.1][-][-][info][application] $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_PRAGMA' => 'no-cache'
     'HTTP_CACHE_CONTROL' => 'no-cache'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT' => 'application/vnd.api+json'
+    'HTTP_ORIGIN' => 'http://ember.loc:8080'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://ember.loc:8080/rentals'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
 '
@@ -663,42 +336,44 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41976'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/'
+    'REMOTE_PORT' => '60349'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/'
+    'REQUEST_URI' => '//admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512602552.652
-    'REQUEST_TIME' => 1512602552
+    'REQUEST_TIME_FLOAT' => 1512763456.012
+    'REQUEST_TIME' => 1512763456
 ]
-2017-12-06 23:22:39 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
+2017-12-08 20:04:39 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php:537
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
 #1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
 #3 {main}
-2017-12-06 23:22:39 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2017-12-08 20:04:39 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9h822bonth8jegmghn9nu96jt0'
+    '_csrf-backend' => 'c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83\";}'
 ]
 
 $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_PRAGMA' => 'no-cache'
-    'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
+    'HTTP_COOKIE' => 'advanced-backend=9h822bonth8jegmghn9nu96jt0; _csrf-backend=c79bc002506d923c84f056a5f2a6f16b4e28c67e753fb2e48aba6943fffb6477a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yVoRLTh0aHSjabpoGkXk-7XjAoU_1D83%22%3B%7D'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
 '
@@ -713,42 +388,41 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41977'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/'
+    'REMOTE_PORT' => '60350'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/'
+    'REQUEST_URI' => '//admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512602559.881
-    'REQUEST_TIME' => 1512602559
+    'REQUEST_TIME_FLOAT' => 1512763479.072
+    'REQUEST_TIME' => 1512763479
 ]
-2017-12-06 23:22:45 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Request.php:281
+2017-12-11 13:49:29 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: request' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php:52
 Stack trace:
-#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
-#1 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(14): yii\base\Application->run()
-#3 {main}
-2017-12-06 23:22:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
-    'advanced-frontend' => '5stgu4am4t5deo0lneo44e5e31'
-    '_csrf-frontend' => '271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"5qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3\";}'
-    'advanced-backend' => 'dnjod5buutngk8t718efpdsp06'
-    '_csrf-backend' => '19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx\";}'
-]
-
-$_SERVER = [
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php(52): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/mnt/sda3/www/e...', 52, Array)
+#1 [internal function]: api\modules\module1\controllers\RentalController->actionRentals()
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('rentals', Array)
+#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('module1/rental/...', Array)
+#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#8 {main}
+2017-12-11 13:49:29 [127.0.0.1][-][-][info][application] $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'ember.loc'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_PRAGMA' => 'no-cache'
     'HTTP_CACHE_CONTROL' => 'no-cache'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT' => 'application/vnd.api+json'
+    'HTTP_ORIGIN' => 'http://ember.loc:8080'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://ember.loc:8080/rentals'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'advanced-frontend=5stgu4am4t5deo0lneo44e5e31; _csrf-frontend=271b2d89d1239998612bd51d099108d1669a5ced2073e10a11a8b0d929cd390da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%225qxGac4IjaZNgIVMGQ0nm4Bp7EKJXPd3%22%3B%7D; advanced-backend=dnjod5buutngk8t718efpdsp06; _csrf-backend=19683b2c31c6b910216ea25139a7c896f4afa0584cc8b13706db70703283f6eea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uzrCDCdVBs94hBkL8fa8fwGMRnQfROQx%22%3B%7D'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
 '
@@ -763,15 +437,165 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REMOTE_PORT' => '41977'
-    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/'
+    'REMOTE_PORT' => '35374'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rental/rentals/'
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
     'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
     'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1512602565.076
-    'REQUEST_TIME' => 1512602565
+    'REQUEST_TIME_FLOAT' => 1513000169.487
+    'REQUEST_TIME' => 1513000169
+]
+2017-12-11 14:17:48 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php:62
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-11 14:17:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'city' => 'a'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'ember.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'application/vnd.api+json'
+    'HTTP_ORIGIN' => 'http://ember.loc:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://ember.loc:8080/rentals'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'ember.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ember/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'REMOTE_PORT' => '35489'
+    'REDIRECT_QUERY_STRING' => 'city=a'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'city=a'
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals?city=a'
+    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513001868.715
+    'REQUEST_TIME' => 1513001868
+]
+2017-12-11 14:27:24 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php:64
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php(64): yii\base\ErrorHandler->handleError(8, 'Array to string...', '/mnt/sda3/www/e...', 64, Array)
+#1 [internal function]: api\modules\module1\controllers\RentalController->actionRentals()
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('rentals', Array)
+#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('module1/rental/...', Array)
+#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#8 {main}
+2017-12-11 14:27:24 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'ember.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'application/vnd.api+json'
+    'HTTP_ORIGIN' => 'http://ember.loc:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://ember.loc:8080/rentals'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'ember.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ember/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'REMOTE_PORT' => '35589'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
+    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513002444.369
+    'REQUEST_TIME' => 1513002444
+]
+2017-12-11 14:27:54 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php:64
+Stack trace:
+#0 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/modules/module1/controllers/RentalController.php(64): yii\base\ErrorHandler->handleError(8, 'Array to string...', '/mnt/sda3/www/e...', 64, Array)
+#1 [internal function]: api\modules\module1\controllers\RentalController->actionRentals()
+#2 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('rentals', Array)
+#5 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('module1/rental/...', Array)
+#6 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /mnt/sda3/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php(16): yii\base\Application->run()
+#8 {main}
+2017-12-11 14:27:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'city' => 'v'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'ember.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'application/vnd.api+json'
+    'HTTP_ORIGIN' => 'http://ember.loc:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://ember.loc:8080/rentals'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at ember.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'ember.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ember/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ember/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ember/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'REMOTE_PORT' => '35602'
+    'REDIRECT_QUERY_STRING' => 'city=v'
+    'REDIRECT_URL' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'city=v'
+    'REQUEST_URI' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/rentals?city=v'
+    'SCRIPT_NAME' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'PHP_SELF' => '/admin_panel/ember_samples/rentals_yii/yii2-advanced-api/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513002474.252
+    'REQUEST_TIME' => 1513002474
 ]

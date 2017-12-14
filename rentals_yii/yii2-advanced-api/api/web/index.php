@@ -11,4 +11,6 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/main-local.php')
 );
 $application = new yii\web\Application($config);
+//print_r($config);
+//echo "11";exit;
 $application->run();
